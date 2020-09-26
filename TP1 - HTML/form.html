@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form method="get">  <!-- get - values sent in the URL; post - values sent inside the HTTP header -->
+        <fieldset>
+            <legend>Personal data</legend>
+            <label>Name:
+                <input type="text" name="name" required="required">
+            </label><br>
+            <label>Age:<br></label>
+                <input type="radio" name="age" value="less than 18" checked="checked">&lt;18<br>
+                <input type="radio" name="age" value="18 to 35">18-35<br>
+                <input type="radio" name="age" value="36 to 48">36-48<br>
+                <input type="radio" name="age" value="more than 48">&gt;48<br>
+            <label>Profession:
+                <input type="text" name="profession" required="required">
+            </label><br>
+            <label>Country:
+                <select name="country">
+                    <option value="portugal" selected="selected">Portugal</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="spain">Spain</option>
+                    <option value="italy">Italy</option>
+                </select>
+            </label><br>
+            <label>Interests:<br></label>
+                <input type="checkbox" name="interest" value="sports">Sports<br>
+                <input type="checkbox" name="interest" value="cinema">Cinema<br>
+                <input type="checkbox" name="interest" value="music">Music<br>
+                <input type="checkbox" name="interest" value="gaming">Gaming<br>
+            <br>
+            <label>How did you find out about this site?<br>
+                <textarea name="description" rows="4" cols="50"></textarea>
+            </label><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+  </body>
+</html>
